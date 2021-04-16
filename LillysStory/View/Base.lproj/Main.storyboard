@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J2c-2N-6Ry">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -8,6 +8,58 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Lilly's Stories-->
+        <scene sceneID="GhW-zu-mIP">
+            <objects>
+                <tableViewController id="J2c-2N-6Ry" customClass="LillyStoriesViewController" customModule="LillysStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="K0e-Ih-QEW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="lillyStoryCell" id="8o7-kM-mFR">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8o7-kM-mFR" id="aMT-xG-tuM">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="J2c-2N-6Ry" id="ROA-lO-5QG"/>
+                            <outlet property="delegate" destination="J2c-2N-6Ry" id="WGy-uW-A1D"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Lilly's Stories" id="7Fq-iZ-Exa"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToStories" id="yYX-RU-0ci"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NKe-3l-wsU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1059" y="84"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="i3c-pa-Txe">
+            <objects>
+                <navigationController id="jhr-ZZ-Y6J" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="48K-qH-OwB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="J2c-2N-6Ry" kind="relationship" relationship="rootViewController" id="9Em-HW-req"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nE4-Ay-fbM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1939" y="84"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -21,16 +73,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="czk-mC-gvC">
-                                <rect key="frame" x="10" y="54" width="394" height="818"/>
+                                <rect key="frame" x="10" y="98" width="394" height="774"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WI9-XB-fr4" userLabel="Story Label">
-                                        <rect key="frame" x="0.0" y="0.0" width="394" height="618"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="574"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7XO-ZS-dGD">
-                                        <rect key="frame" x="0.0" y="618" width="394" height="100"/>
+                                        <rect key="frame" x="0.0" y="574" width="394" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="5hh-rI-V9f"/>
                                         </constraints>
@@ -43,7 +95,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nc6-kY-3Pe">
-                                        <rect key="frame" x="0.0" y="718" width="394" height="100"/>
+                                        <rect key="frame" x="0.0" y="674" width="394" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="fau-D8-nBp"/>
                                         </constraints>
@@ -71,6 +123,7 @@
                             <constraint firstItem="czk-mC-gvC" firstAttribute="trailing" secondItem="Bh6-2Z-ajg" secondAttribute="trailing" constant="10" id="oNp-yZ-wWy"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Gyb-b1-PBI"/>
                     <connections>
                         <outlet property="choice1Button" destination="7XO-ZS-dGD" id="AlQ-bz-8oR"/>
                         <outlet property="choice2Button" destination="nc6-kY-3Pe" id="6II-7y-Lme"/>

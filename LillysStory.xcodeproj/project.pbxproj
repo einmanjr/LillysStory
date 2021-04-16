@@ -3,31 +3,39 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2520D4D3262A1C77005635EF /* StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2520D4D2262A1C77005635EF /* StoryModel.swift */; };
-		2520D4D7262A1D07005635EF /* StoryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2520D4D6262A1D07005635EF /* StoryBrain.swift */; };
 		2569C0292629D6DD0003810E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2569C0282629D6DD0003810E /* AppDelegate.swift */; };
 		2569C02B2629D6DD0003810E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2569C02A2629D6DD0003810E /* SceneDelegate.swift */; };
-		2569C02D2629D6DD0003810E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2569C02C2629D6DD0003810E /* ViewController.swift */; };
+		2569C02D2629D6DD0003810E /* LillysStoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2569C02C2629D6DD0003810E /* LillysStoriesViewController.swift */; };
 		2569C0302629D6DD0003810E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2569C02E2629D6DD0003810E /* Main.storyboard */; };
 		2569C0322629D6DE0003810E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2569C0312629D6DE0003810E /* Assets.xcassets */; };
 		2569C0352629D6DE0003810E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2569C0332629D6DE0003810E /* LaunchScreen.storyboard */; };
+		25DD98CF262A377E004161F3 /* StoryCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DD98CE262A377E004161F3 /* StoryCollection.swift */; };
+		25DD98D2262A398B004161F3 /* Story1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DD98D1262A398B004161F3 /* Story1.swift */; };
+		25DD98D6262A3EDB004161F3 /* Story2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DD98D5262A3EDB004161F3 /* Story2.swift */; };
+		E2E522291474104D91755ACD /* Pods_LillysStory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 743DA6BA6B88589EC9E15616 /* Pods_LillysStory.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2520D4D2262A1C77005635EF /* StoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
-		2520D4D6262A1D07005635EF /* StoryBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBrain.swift; sourceTree = "<group>"; };
 		2569C0252629D6DD0003810E /* LillysStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LillysStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2569C0282629D6DD0003810E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2569C02A2629D6DD0003810E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2569C02C2629D6DD0003810E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2569C02C2629D6DD0003810E /* LillysStoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LillysStoriesViewController.swift; sourceTree = "<group>"; };
 		2569C02F2629D6DD0003810E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2569C0312629D6DE0003810E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2569C0342629D6DE0003810E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2569C0362629D6DE0003810E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25DD98CE262A377E004161F3 /* StoryCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollection.swift; sourceTree = "<group>"; };
+		25DD98D1262A398B004161F3 /* Story1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story1.swift; sourceTree = "<group>"; };
+		25DD98D5262A3EDB004161F3 /* Story2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story2.swift; sourceTree = "<group>"; };
+		743DA6BA6B88589EC9E15616 /* Pods_LillysStory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LillysStory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AE55C6EA659E6B947781CE4 /* Pods-LillysStory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LillysStory.debug.xcconfig"; path = "Target Support Files/Pods-LillysStory/Pods-LillysStory.debug.xcconfig"; sourceTree = "<group>"; };
+		BA77D36669CCA8A048BDC76F /* Pods-LillysStory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LillysStory.release.xcconfig"; path = "Target Support Files/Pods-LillysStory/Pods-LillysStory.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2E522291474104D91755ACD /* Pods_LillysStory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +54,9 @@
 			isa = PBXGroup;
 			children = (
 				2520D4D2262A1C77005635EF /* StoryModel.swift */,
-				2520D4D6262A1D07005635EF /* StoryBrain.swift */,
+				25DD98CE262A377E004161F3 /* StoryCollection.swift */,
+				25DD98D1262A398B004161F3 /* Story1.swift */,
+				25DD98D5262A3EDB004161F3 /* Story2.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -55,6 +66,8 @@
 			children = (
 				2569C0272629D6DD0003810E /* LillysStory */,
 				2569C0262629D6DD0003810E /* Products */,
+				5AFAFFE162FBFE90AA4CF5DB /* Pods */,
+				8D8F74D50321C038BC84ED75 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,9 +105,26 @@
 		2569C03E2629D73F0003810E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2569C02C2629D6DD0003810E /* ViewController.swift */,
+				2569C02C2629D6DD0003810E /* LillysStoriesViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		5AFAFFE162FBFE90AA4CF5DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AE55C6EA659E6B947781CE4 /* Pods-LillysStory.debug.xcconfig */,
+				BA77D36669CCA8A048BDC76F /* Pods-LillysStory.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8D8F74D50321C038BC84ED75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				743DA6BA6B88589EC9E15616 /* Pods_LillysStory.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,9 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2569C0392629D6DE0003810E /* Build configuration list for PBXNativeTarget "LillysStory" */;
 			buildPhases = (
+				1FA966F4B5347EFE1A3243C5 /* [CP] Check Pods Manifest.lock */,
 				2569C0212629D6DD0003810E /* Sources */,
 				2569C0222629D6DD0003810E /* Frameworks */,
 				2569C0232629D6DD0003810E /* Resources */,
+				377CE7E5FB83FD42BA6669CB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,16 +194,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FA966F4B5347EFE1A3243C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LillysStory-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		377CE7E5FB83FD42BA6669CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LillysStory/Pods-LillysStory-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LillysStory/Pods-LillysStory-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LillysStory/Pods-LillysStory-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2569C0212629D6DD0003810E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2520D4D7262A1D07005635EF /* StoryBrain.swift in Sources */,
-				2569C02D2629D6DD0003810E /* ViewController.swift in Sources */,
+				2569C02D2629D6DD0003810E /* LillysStoriesViewController.swift in Sources */,
 				2520D4D3262A1C77005635EF /* StoryModel.swift in Sources */,
+				25DD98CF262A377E004161F3 /* StoryCollection.swift in Sources */,
 				2569C0292629D6DD0003810E /* AppDelegate.swift in Sources */,
+				25DD98D6262A3EDB004161F3 /* Story2.swift in Sources */,
 				2569C02B2629D6DD0003810E /* SceneDelegate.swift in Sources */,
+				25DD98D2262A398B004161F3 /* Story1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +391,7 @@
 		};
 		2569C03A2629D6DE0003810E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AE55C6EA659E6B947781CE4 /* Pods-LillysStory.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -334,6 +411,7 @@
 		};
 		2569C03B2629D6DE0003810E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA77D36669CCA8A048BDC76F /* Pods-LillysStory.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
