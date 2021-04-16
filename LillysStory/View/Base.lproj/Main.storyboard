@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LillysStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q3O-3C-CWX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="xIX-yR-wqo">
+                                <rect key="frame" x="-16" y="0.0" width="430" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="czk-mC-gvC">
+                                <rect key="frame" x="10" y="54" width="394" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WI9-XB-fr4" userLabel="Story Label">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="618"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7XO-ZS-dGD">
+                                        <rect key="frame" x="0.0" y="618" width="394" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="5hh-rI-V9f"/>
+                                        </constraints>
+                                        <state key="normal" title="Choice 1" backgroundImage="choice1Background">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E4P-mG-UQd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nc6-kY-3Pe">
+                                        <rect key="frame" x="0.0" y="718" width="394" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="fau-D8-nBp"/>
+                                        </constraints>
+                                        <state key="normal" title="Choice 2" backgroundImage="choice2Background">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="src-CM-Fhz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bh6-2Z-ajg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Bh6-2Z-ajg" firstAttribute="bottom" secondItem="czk-mC-gvC" secondAttribute="bottom" constant="10" id="8Pd-3U-rHs"/>
+                            <constraint firstItem="czk-mC-gvC" firstAttribute="leading" secondItem="Bh6-2Z-ajg" secondAttribute="leading" constant="10" id="9mp-qy-gFK"/>
+                            <constraint firstItem="czk-mC-gvC" firstAttribute="top" secondItem="Bh6-2Z-ajg" secondAttribute="top" constant="10" id="DCx-hJ-E7R"/>
+                            <constraint firstItem="czk-mC-gvC" firstAttribute="top" secondItem="Bh6-2Z-ajg" secondAttribute="top" constant="10" id="Din-59-JJQ"/>
+                            <constraint firstItem="Bh6-2Z-ajg" firstAttribute="trailing" secondItem="czk-mC-gvC" secondAttribute="trailing" constant="10" id="Jke-yA-Xo9"/>
+                            <constraint firstItem="czk-mC-gvC" firstAttribute="leading" secondItem="Bh6-2Z-ajg" secondAttribute="leading" constant="10" id="NXx-DS-lJt"/>
+                            <constraint firstItem="czk-mC-gvC" firstAttribute="bottom" secondItem="Bh6-2Z-ajg" secondAttribute="bottom" constant="10" id="g5w-3S-Q4O"/>
+                            <constraint firstItem="czk-mC-gvC" firstAttribute="trailing" secondItem="Bh6-2Z-ajg" secondAttribute="trailing" constant="10" id="oNp-yZ-wWy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="choice1Button" destination="7XO-ZS-dGD" id="AlQ-bz-8oR"/>
+                        <outlet property="choice2Button" destination="nc6-kY-3Pe" id="6II-7y-Lme"/>
+                        <outlet property="storyLabel" destination="WI9-XB-fr4" id="Oet-AR-Rfq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146.37681159420291" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="958" height="1793"/>
+        <image name="choice1Background" width="1370.5" height="363"/>
+        <image name="choice2Background" width="1370.5" height="363"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

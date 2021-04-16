@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2520D4D3262A1C77005635EF /* StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2520D4D2262A1C77005635EF /* StoryModel.swift */; };
+		2520D4D7262A1D07005635EF /* StoryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2520D4D6262A1D07005635EF /* StoryBrain.swift */; };
 		2569C0292629D6DD0003810E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2569C0282629D6DD0003810E /* AppDelegate.swift */; };
 		2569C02B2629D6DD0003810E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2569C02A2629D6DD0003810E /* SceneDelegate.swift */; };
 		2569C02D2629D6DD0003810E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2569C02C2629D6DD0003810E /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2520D4D2262A1C77005635EF /* StoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
+		2520D4D6262A1D07005635EF /* StoryBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBrain.swift; sourceTree = "<group>"; };
 		2569C0252629D6DD0003810E /* LillysStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LillysStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2569C0282629D6DD0003810E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2569C02A2629D6DD0003810E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2520D4D1262A1C5A005635EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2520D4D2262A1C77005635EF /* StoryModel.swift */,
+				2520D4D6262A1D07005635EF /* StoryBrain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		2569C01C2629D6DD0003810E = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +71,30 @@
 			children = (
 				2569C0282629D6DD0003810E /* AppDelegate.swift */,
 				2569C02A2629D6DD0003810E /* SceneDelegate.swift */,
-				2569C02C2629D6DD0003810E /* ViewController.swift */,
-				2569C02E2629D6DD0003810E /* Main.storyboard */,
+				2520D4D1262A1C5A005635EF /* Model */,
+				2569C03D2629D72B0003810E /* View */,
+				2569C03E2629D73F0003810E /* Controller */,
 				2569C0312629D6DE0003810E /* Assets.xcassets */,
 				2569C0332629D6DE0003810E /* LaunchScreen.storyboard */,
 				2569C0362629D6DE0003810E /* Info.plist */,
 			);
 			path = LillysStory;
+			sourceTree = "<group>";
+		};
+		2569C03D2629D72B0003810E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2569C02E2629D6DD0003810E /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2569C03E2629D73F0003810E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2569C02C2629D6DD0003810E /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2520D4D7262A1D07005635EF /* StoryBrain.swift in Sources */,
 				2569C02D2629D6DD0003810E /* ViewController.swift in Sources */,
+				2520D4D3262A1C77005635EF /* StoryModel.swift in Sources */,
 				2569C0292629D6DD0003810E /* AppDelegate.swift in Sources */,
 				2569C02B2629D6DD0003810E /* SceneDelegate.swift in Sources */,
 			);
