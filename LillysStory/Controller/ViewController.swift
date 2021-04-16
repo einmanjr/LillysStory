@@ -17,7 +17,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        updateUI()
     }
     
     @IBAction func choiceMade(_ sender: UIButton) {
